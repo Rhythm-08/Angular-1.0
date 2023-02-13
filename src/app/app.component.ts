@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'LoginForm';
+   username:any;
+
+  constructor() { }
+  
+  name:string |undefined;
+  show:any;
+  onClick(){
+    this.show = this.name;
+    console.log('hello');
+  }
+
+  
+  
+ 
 }
+

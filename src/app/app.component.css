@@ -1,0 +1,15 @@
+
+.co{
+    height:10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.para{
+    margin-left: 700px;
+    margin-top: 200px;
+    font-size: 30px;
+   
+}

@@ -1,0 +1,29 @@
+<!-- <p>student-result works!</p> -->
+
+<button (click)="sub()">Show </button>
+<table class="table" *ngIf="showTable">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Email</th>
+        <th scope="col">city</th>
+        <th scope="col">state</th>
+        <th scope="col">zip</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let item of export_Arr; let i = index" >
+        <th scope="row">{{i+1}}</th>
+        <td >{{item.first}}</td>
+        <td>{{item.last}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.state}}</td>
+        <td>{{item.zip}}</td>
+        <button (click)="delete(i)">delete</button>
+
+      </tr>
+    </tbody>
+  </table>
